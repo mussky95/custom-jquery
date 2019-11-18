@@ -1,0 +1,37 @@
+{
+  "name": "@mussky/custom-jquery",
+  "version": "1.0.0",
+  "description": "Custom JQuery",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mussky95/custom-jquery.git"
+  },
+  "author": "Nikita Mussky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mussky95/custom-jquery/issues"
+  },
+  "homepage": "https://github.com/mussky95/custom-jquery#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.3",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0"
+  }
+}
