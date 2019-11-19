@@ -1,1 +1,1 @@
-# Custom JQuery
+# Custom JQuery [![Build Status](https://travis-ci.com/mussky95/custom-jquery.svg?branch=master)](https://travis-ci.com/mussky95/custom-jquery) [![Maintainability](https://api.codeclimate.com/v1/badges/66c61d046da0cd59c1dc/maintainability)](https://codeclimate.com/github/mussky95/custom-jquery/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/66c61d046da0cd59c1dc/test_coverage)](https://codeclimate.com/github/mussky95/custom-jquery/test_coverage)
