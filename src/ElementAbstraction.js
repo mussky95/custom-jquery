@@ -123,26 +123,16 @@ class ElementAbstraction {
     return this;
   }
 
-  on(eventName, callbackOrSelector, callback) {
-    if (isString(callbackOrSelector)) {
-      this.elements.forEach((el) => {
-        // eslint-disable-next-line no-param-reassign
-        el = el.find(callbackOrSelector);
-        if (el) {
-          el.addEventListener(eventName, callback);
-        }
-      });
-    } else {
-      this.elements.forEach((el) => {
-        el.addEventListener(eventName, callbackOrSelector);
-      });
-    }
+  on(eventName, callback) {
+    this.elements.forEach((el) => {
+      el.addEventListener(eventName, callback);
+    });
 
     return this;
   }
 
-  click(callbackOrSelector, callback) {
-    return this.on('click', callbackOrSelector, callback);
+  click(callback) {
+    return this.on('click', callback);
   }
 
   each(callback) {
